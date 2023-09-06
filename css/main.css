@@ -1,1 +1,84 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scrollbar-color: #2e2e2e;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dpnone {
+  display: none;
+}
+
+.overf-hidden {
+  overflow: hidden;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 4em;
+  background: none;
+  border: 1px solid transparent;
+  z-index: 100;
+  cursor: pointer;
+}
+.burger-menu__button {
+  border: none;
+}
+.burger-menu__button i {
+  cursor: pointer;
+  color: #000000;
+  background-color: #fff;
+  border: none;
+  font-size: 4rem;
+}
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.nav-mobile--active {
+  transform: translateY(0);
+}
+.nav-mobile__item {
+  position: relative;
+  display: block;
+  color: black;
+  padding: 1em 2em;
+  font-size: 3rem;
+}/*# sourceMappingURL=main.css.map */

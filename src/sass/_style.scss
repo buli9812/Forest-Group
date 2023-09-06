@@ -1,1 +1,90 @@
 @use './colors' as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scrollbar-color: $dark;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	// background-color: transparent;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+//js modifiers
+.dpnone {
+	display: none;
+}
+.overf-hidden {
+	overflow: hidden;
+}
+
+//nav
+
+//mobile
+
+.burger-menu {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 4em;
+	background: none;
+	border: 1px solid transparent;
+	z-index: 100;
+	cursor: pointer;
+	&__button {
+		border: none;
+		i {
+			cursor: pointer;
+			color: $vanta-black;
+			background-color: $pure-white;
+			border: none;
+			font-size: 4rem;
+		}
+	}
+}
+
+.nav-mobile {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: white;
+	transform: translateY(-100%);
+	transition: transform 0.5s ease-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+
+	&--active {
+		transform: translateY(0);
+	}
+	&__item {
+		position: relative;
+		display: block;
+		color: black;
+		padding: 1em 2em;
+		font-size: 3rem;
+	}
+}
