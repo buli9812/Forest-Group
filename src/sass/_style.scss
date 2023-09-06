@@ -63,17 +63,15 @@ a {
 	top: 0px;
 	right: 0px;
 	padding: 4em;
-	background: none;
 	border: 1px solid transparent;
 	z-index: 100;
 	cursor: pointer;
 	&__button {
 		border: none;
+		background: none;
 		i {
 			cursor: pointer;
-			color: $vanta-black;
-			background-color: $pure-white;
-			border: none;
+			color: $pure-white;
 			font-size: 4rem;
 		}
 	}
