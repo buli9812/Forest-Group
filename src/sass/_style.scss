@@ -53,7 +53,9 @@ a {
 .overf-hidden {
 	overflow: hidden;
 }
-
+.black-bars-color {
+	color: black;
+}
 //nav
 
 //mobile
@@ -67,11 +69,12 @@ a {
 	z-index: 100;
 	cursor: pointer;
 	&__button {
+		color: $pure-white;
 		border: none;
 		background: none;
+
 		i {
 			cursor: pointer;
-			color: $pure-white;
 			font-size: 4rem;
 		}
 	}
@@ -217,7 +220,7 @@ a {
 	// align-items: center;
 	// font-size: 2rem;
 	h2 {
-		margin: 4rem 0;
+		padding: 4rem 0;
 		font-weight: 400;
 	}
 	p {
