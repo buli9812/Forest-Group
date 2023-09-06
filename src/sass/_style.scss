@@ -36,6 +36,7 @@ ul {
 }
 a {
 	text-decoration: none;
+	color: $vanta-black;
 }
 //general modifiers
 .wrapper {
@@ -205,7 +206,7 @@ a {
 	}
 }
 
-// offer
+// offer - sprawdzic i usunac important
 
 .offer {
 	.fa-check {
@@ -291,4 +292,46 @@ a {
 			padding-left: 4.8rem;
 		}
 	}
+}
+
+// footer
+
+.footer {
+	background-color: $light-white;
+
+	.container-l {
+		font-size: 2.6rem;
+
+		padding: 0.8em 0;
+		i {
+			padding: 0 2rem;
+		}
+	}
+	.container-r {
+		display: flex;
+		justify-content: space-evenly;
+		padding-bottom: 0.8em;
+		text-align: left;
+		.footer__card {
+			font-size: 1.3rem;
+
+			li {
+				padding: 1rem 0;
+			}
+			li:first-child {
+				top: 0;
+				font-size: 1.8rem;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.data {
+	display: block;
+	text-align: center;
+	background-color: $light-white;
+	border-top: 1px solid $li-negative;
+	font-size: 1.6rem;
+	padding: 0.8rem;
 }
