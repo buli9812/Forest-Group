@@ -1,1 +1,252 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scrollbar-color: #2e2e2e;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.dpnone {
+  display: none;
+}
+
+.overf-hidden {
+  overflow: hidden;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 4em;
+  background: none;
+  border: 1px solid transparent;
+  z-index: 100;
+  cursor: pointer;
+}
+.burger-menu__button {
+  border: none;
+}
+.burger-menu__button i {
+  cursor: pointer;
+  color: #000000;
+  background-color: #fff;
+  border: none;
+  font-size: 4rem;
+}
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.nav-mobile--active {
+  transform: translateY(0);
+}
+.nav-mobile__item {
+  position: relative;
+  display: block;
+  color: #000000;
+  padding: 1em 2em;
+  font-size: 3rem;
+}
+
+.header .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.header__img {
+  position: relative;
+  min-height: 400px;
+  background-image: url("/dist/img/jungle-small.jpg");
+  background-position: 20% 0;
+  background-size: cover;
+  z-index: 0;
+}
+.header__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+}
+.header__text {
+  position: absolute;
+  font-size: 1.6rem;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+.header__text h1 {
+  font-weight: 600;
+}
+
+.aboutus h2 {
+  font-size: 3.6rem;
+  margin: 2rem 0;
+  font-weight: 500;
+}
+.aboutus .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.aboutus__img {
+  width: 80%;
+}
+.aboutus__text h3 {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+.aboutus__text p {
+  text-align: justify;
+  font-size: 2rem;
+  margin: 2em 1em;
+}
+
+.banner__img {
+  height: 250px;
+  background-image: url("/dist/img/girl-small.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+  position: relative;
+}
+.banner__shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+}
+.banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  padding: 1em 1em;
+  color: #fff;
+  border: 1px solid #fff;
+  z-index: 20;
+}
+
+.offer {
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.offer .fa-check {
+  color: #00ffaa;
+}
+.offer .fa-minus {
+  color: #aca5a5;
+}
+.offer h2 {
+  margin: 2em 0;
+  font-weight: 400;
+}
+.offer__cta-btn {
+  position: relative;
+  background-color: #1755e7;
+  border-radius: 15px;
+  padding: 1rem 7rem;
+  font-size: 2rem;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  margin-top: 0.8em;
+  margin-bottom: 3.2em;
+  font-weight: 600;
+}
+.offer__cards {
+  margin: 2em 0;
+  overflow: hidden;
+}
+.offer__card {
+  display: inline-block;
+  position: relative;
+  width: 240px;
+  height: 370px;
+  margin: 1em;
+  box-shadow: 0px 3px 10px -3px #000000;
+  border-radius: 10px;
+}
+.offer__card h3 {
+  padding: 1em;
+}
+.offer__card-li, .offer__card-li-negative {
+  font-size: 1.6rem;
+}
+.offer__card-price {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+.offer__card-btn {
+  position: absolute;
+  bottom: 0;
+  width: 160px;
+  height: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 3em;
+  background-color: #fff;
+  color: #000000;
+  box-shadow: 0px 3px 10px -3px #000000;
+  border-radius: 8px;
+}
+.offer__card-li-negative {
+  color: rgb(172, 165, 165);
+}
+.offer__card--scale {
+  transform: scale(1.1);
+}/*# sourceMappingURL=main.css.map */

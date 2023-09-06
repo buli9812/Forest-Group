@@ -1,1 +1,338 @@
 @use './colors' as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scrollbar-color: $dark;
+	overflow-x: hidden;
+}
+h2 {
+	font-size: 3.6rem;
+}
+h3 {
+	font-size: 2.6rem;
+}
+
+body,
+button {
+	font-family: 'Raleway', sans-serif;
+	// background-color: transparent;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: $vanta-black;
+}
+//general modifiers
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	max-width: 1200px;
+	text-align: center;
+}
+//js modifiers
+.dpnone {
+	display: none;
+}
+.overf-hidden {
+	overflow: hidden;
+}
+.black-bars-color {
+	color: black;
+}
+//nav
+
+//mobile
+
+.burger-menu {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 4em;
+	border: 1px solid transparent;
+	z-index: 100;
+	cursor: pointer;
+	&__button {
+		color: $pure-white;
+		border: none;
+		background: none;
+
+		i {
+			cursor: pointer;
+			font-size: 4rem;
+		}
+	}
+}
+
+.nav-mobile {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: $pure-white;
+	transform: translateY(-100%);
+	transition: transform 0.5s ease-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+
+	&--active {
+		transform: translateY(0);
+	}
+	&__item {
+		position: relative;
+		display: block;
+		color: $vanta-black;
+		padding: 1em 2em;
+		font-size: 3rem;
+	}
+}
+
+// header
+
+.header {
+	.wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	&__img {
+		position: relative;
+		min-height: 400px;
+		background-image: url('/dist/img/jungle-small.jpg');
+		background-position: 20% 0;
+		background-size: cover;
+		z-index: 0;
+	}
+	&__shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: $shadow-color;
+		background-position: center;
+		background-size: cover;
+		z-index: 10;
+	}
+	&__text {
+		position: absolute;
+		font-size: 1.6rem;
+		color: $pure-white;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 20;
+		h1 {
+			font-weight: 600;
+		}
+	}
+}
+
+//about us
+
+.aboutus {
+	h2 {
+		margin: 2rem 0;
+		font-weight: 500;
+	}
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__img {
+		width: 80%;
+	}
+	&__text {
+		h3 {
+			font-weight: 600;
+			display: flex;
+			justify-content: center;
+
+			margin: 2rem 0;
+		}
+		p {
+			text-align: justify;
+			font-size: 2rem;
+			margin: 2em 1em;
+		}
+	}
+}
+
+// banner
+
+.banner {
+	&__img {
+		height: 250px;
+		background-image: url('/dist/img/girl-small.jpg');
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
+		z-index: 0;
+		position: relative;
+	}
+	&__shadow {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: $shadow-color;
+		background-position: center;
+		background-size: cover;
+		z-index: 10;
+	}
+	&__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 2rem;
+		padding: 1em 1em;
+		color: $pure-white;
+		border: 1px solid $pure-white;
+		z-index: 20;
+	}
+}
+
+// offer - sprawdzic i usunac important
+
+.offer {
+	.fa-check {
+		color: $green-color;
+	}
+	.fa-minus {
+		color: $grey-color;
+	}
+	// justify-content: center;
+	// align-items: center;
+	// font-size: 2rem;
+	h2 {
+		padding: 4rem 0;
+		font-weight: 400;
+	}
+	p {
+		font-size: 2rem;
+	}
+
+	&__cta-btn {
+		position: relative;
+		background-color: $cta-button-color;
+		border-radius: 15px;
+		padding: 1rem 7rem;
+		font-size: 2rem;
+		color: #ffffff;
+		display: inline-block;
+		text-align: center;
+		margin-top: 1.6rem;
+		margin-bottom: 6.4rem;
+		font-weight: 600;
+	}
+	&__cards {
+		margin: 4rem 0;
+		overflow: hidden;
+	}
+
+	&__card {
+		&-price {
+			font-size: 4rem !important;
+		}
+		h3 {
+			margin: 2rem;
+			font-weight: 400;
+		}
+		ul {
+			text-align: left;
+			padding-left: 3.3rem;
+			li {
+				width: 100%;
+				font-size: 1.6rem;
+				line-height: 2.6rem;
+			}
+		}
+
+		display: inline-block;
+		position: relative;
+		width: 240px;
+		height: 100%;
+		margin: 2rem;
+		box-shadow: 0px 3px 10px -3px $vanta-black;
+		border-radius: 10px;
+
+		&-price {
+			font-size: 4rem;
+			font-weight: 600;
+			margin-bottom: 1rem;
+		}
+		&-btn {
+			font-size: 1.6rem;
+			padding: 1rem 5.2rem;
+			margin: 3rem 0;
+			background-color: $pure-white;
+			box-shadow: 0px 3px 10px -3px $vanta-black;
+			border-radius: 8px;
+		}
+		&-li-negative {
+			color: $li-negative;
+		}
+	}
+	&__card:last-child {
+		ul {
+			padding-left: 4.8rem;
+		}
+	}
+}
+
+// footer
+
+.footer {
+	background-color: $light-white;
+
+	.container-l {
+		font-size: 2.6rem;
+
+		padding: 0.8em 0;
+		i {
+			padding: 0 2rem;
+		}
+	}
+	.container-r {
+		display: flex;
+		justify-content: space-evenly;
+		padding-bottom: 0.8em;
+		text-align: left;
+		.footer__card {
+			font-size: 1.3rem;
+
+			li {
+				padding: 1rem 0;
+			}
+			li:first-child {
+				top: 0;
+				font-size: 1.8rem;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.data {
+	display: block;
+	text-align: center;
+	background-color: $light-white;
+	border-top: 1px solid $li-negative;
+	font-size: 1.6rem;
+	padding: 0.8rem;
+}
