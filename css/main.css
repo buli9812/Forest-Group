@@ -122,4 +122,29 @@ a {
 }
 .header__text h1 {
   font-weight: 600;
+}
+
+.aboutus h2 {
+  font-size: 3.6rem;
+  margin: 2rem 0;
+  font-weight: 500;
+}
+.aboutus .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.aboutus__img {
+  width: 80%;
+}
+.aboutus__text h3 {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+.aboutus__text p {
+  text-align: justify;
+  font-size: 2rem;
+  margin: 2em 1em;
 }/*# sourceMappingURL=main.css.map */
