@@ -1,28 +1,5 @@
 @use './colors' as *;
 
-// @media (min-width: 576px) {
-// 	h2 {
-// 		font-size: 5rem;
-// 	}
-// 	.wrapper {
-// 		padding: 0 3rem;
-// 	}
-// 	.header {
-// 		&__text {
-// 			font-size: 2rem;
-// 		}
-// 	}
-// 	.aboutus {
-// 		&__text {
-// 			margin: 3rem 0;
-// 			p {
-// 				font-size: 2rem;
-// 				margin-bottom: 3rem;
-// 			}
-// 		}
-// 	}
-// }
-
 @media (min-width: 576px) {
 	h2 {
 		font-size: 5.6rem;
@@ -36,8 +13,6 @@
 		}
 	}
 	.aboutus {
-		line-height: 300%;
-
 		h3 {
 			font-size: 3rem;
 		}
@@ -68,6 +43,19 @@
 				li:first-child {
 					font-size: 1.8rem;
 				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.aboutus {
+		&__text {
+			h3 {
+				font-size: 4rem;
+			}
+			p {
+				padding: 0 4rem;
 			}
 		}
 	}

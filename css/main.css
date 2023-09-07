@@ -23,6 +23,7 @@ h2 {
   font-size: 4rem;
   font-weight: 300;
   padding: 4rem 0;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -348,9 +349,6 @@ a {
   .header__text {
     font-size: 2.6rem;
   }
-  .aboutus {
-    line-height: 300%;
-  }
   .aboutus h3 {
     font-size: 3rem;
   }
@@ -371,5 +369,13 @@ a {
   }
   .footer .container-r .footer__card li:first-child {
     font-size: 1.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .aboutus__text h3 {
+    font-size: 4rem;
+  }
+  .aboutus__text p {
+    padding: 0 4rem;
   }
 }/*# sourceMappingURL=main.css.map */
