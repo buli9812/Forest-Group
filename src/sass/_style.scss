@@ -21,6 +21,7 @@ html {
 }
 h2 {
 	font-size: 3.6rem;
+	font-weight: 500;
 }
 h3 {
 	font-size: 2.6rem;
@@ -33,6 +34,8 @@ button {
 }
 ul {
 	list-style: none;
+	line-height: 2.6rem;
+	font-size: 1.6rem;
 }
 a {
 	text-decoration: none;
@@ -256,10 +259,9 @@ a {
 		ul {
 			text-align: left;
 			padding-left: 3.3rem;
+
 			li {
 				width: 100%;
-				font-size: 1.6rem;
-				line-height: 2.6rem;
 			}
 		}
 
@@ -335,4 +337,51 @@ a {
 	border-top: 1px solid $li-negative;
 	font-size: 1.6rem;
 	padding: 0.8rem;
+}
+
+// page contact section
+
+.contact-section {
+	.contact {
+		&__header {
+			margin: 2rem;
+			p {
+				font-size: 2rem;
+				margin-top: 2rem;
+			}
+		}
+		&__box {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin: 3rem auto;
+			label {
+				font-size: 2rem;
+				margin-bottom: 1rem;
+			}
+			input,
+			textarea {
+				padding: 1.5rem;
+				font-size: 2rem;
+				font-family: inherit;
+				border: 2px solid $grey-color;
+				border-radius: 10px;
+			}
+			textarea {
+				min-height: 150px;
+				resize: vertical;
+			}
+		}
+	}
+	.googlemaps {
+		margin-bottom: 2rem;
+		&__text {
+			margin: 2rem;
+			ul {
+				margin-top: 4rem;
+				line-height: 2.6rem;
+				font-size: 1.6rem;
+			}
+		}
+	}
 }

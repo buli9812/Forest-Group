@@ -18,16 +18,29 @@ html {
   overflow-x: hidden;
 }
 
-body {
+h2 {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+body,
+button {
   font-family: "Raleway", sans-serif;
 }
 
 ul {
   list-style: none;
+  line-height: 2.6rem;
+  font-size: 1.6rem;
 }
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 .wrapper {
@@ -46,24 +59,26 @@ a {
   overflow: hidden;
 }
 
+.black-bars-color {
+  color: black;
+}
+
 .burger-menu {
   position: fixed;
   top: 0px;
   right: 0px;
   padding: 4em;
-  background: none;
   border: 1px solid transparent;
   z-index: 100;
   cursor: pointer;
 }
 .burger-menu__button {
+  color: #fff;
   border: none;
+  background: none;
 }
 .burger-menu__button i {
   cursor: pointer;
-  color: #000000;
-  background-color: #fff;
-  border: none;
   font-size: 4rem;
 }
 
@@ -125,7 +140,6 @@ a {
 }
 
 .aboutus h2 {
-  font-size: 3.6rem;
   margin: 2rem 0;
   font-weight: 500;
 }
@@ -140,7 +154,6 @@ a {
   font-weight: 600;
   display: flex;
   justify-content: center;
-  font-size: 3rem;
   margin: 2rem 0;
 }
 .aboutus__text p {
@@ -179,11 +192,6 @@ a {
   z-index: 20;
 }
 
-.offer {
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-}
 .offer .fa-check {
   color: #00ffaa;
 }
@@ -191,8 +199,11 @@ a {
   color: #aca5a5;
 }
 .offer h2 {
-  margin: 2em 0;
+  padding: 4rem 0;
   font-weight: 400;
+}
+.offer p {
+  font-size: 2rem;
 }
 .offer__cta-btn {
   position: relative;
@@ -203,50 +214,131 @@ a {
   color: #ffffff;
   display: inline-block;
   text-align: center;
-  margin-top: 0.8em;
-  margin-bottom: 3.2em;
+  margin-top: 1.6rem;
+  margin-bottom: 6.4rem;
   font-weight: 600;
 }
 .offer__cards {
-  margin: 2em 0;
+  margin: 4rem 0;
   overflow: hidden;
 }
 .offer__card {
   display: inline-block;
   position: relative;
   width: 240px;
-  height: 370px;
-  margin: 1em;
+  height: 100%;
+  margin: 2rem;
   box-shadow: 0px 3px 10px -3px #000000;
   border-radius: 10px;
 }
-.offer__card h3 {
-  padding: 1em;
+.offer__card-price {
+  font-size: 4rem !important;
 }
-.offer__card-li, .offer__card-li-negative {
-  font-size: 1.6rem;
+.offer__card h3 {
+  margin: 2rem;
+  font-weight: 400;
+}
+.offer__card ul {
+  text-align: left;
+  padding-left: 3.3rem;
+}
+.offer__card ul li {
+  width: 100%;
 }
 .offer__card-price {
   font-size: 4rem;
   font-weight: 600;
-  padding-bottom: 0.5em;
+  margin-bottom: 1rem;
 }
 .offer__card-btn {
-  position: absolute;
-  bottom: 0;
-  width: 160px;
-  height: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 3em;
+  font-size: 1.6rem;
+  padding: 1rem 5.2rem;
+  margin: 3rem 0;
   background-color: #fff;
-  color: #000000;
   box-shadow: 0px 3px 10px -3px #000000;
   border-radius: 8px;
 }
 .offer__card-li-negative {
   color: rgb(172, 165, 165);
 }
-.offer__card--scale {
-  transform: scale(1.1);
+.offer__card:last-child ul {
+  padding-left: 4.8rem;
+}
+
+.footer {
+  background-color: #eee;
+}
+.footer .container-l {
+  font-size: 2.6rem;
+  padding: 0.8em 0;
+}
+.footer .container-l i {
+  padding: 0 2rem;
+}
+.footer .container-r {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 0.8em;
+  text-align: left;
+}
+.footer .container-r .footer__card {
+  font-size: 1.3rem;
+}
+.footer .container-r .footer__card li {
+  padding: 1rem 0;
+}
+.footer .container-r .footer__card li:first-child {
+  top: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.data {
+  display: block;
+  text-align: center;
+  background-color: #eee;
+  border-top: 1px solid rgb(172, 165, 165);
+  font-size: 1.6rem;
+  padding: 0.8rem;
+}
+
+.contact-section .contact__header {
+  margin: 2rem;
+}
+.contact-section .contact__header p {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.contact-section .contact__box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 3rem auto;
+}
+.contact-section .contact__box label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact-section .contact__box input,
+.contact-section .contact__box textarea {
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-family: inherit;
+  border: 2px solid #aca5a5;
+  border-radius: 10px;
+}
+.contact-section .contact__box textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.contact-section .googlemaps {
+  margin-bottom: 2rem;
+}
+.contact-section .googlemaps__text {
+  margin: 2rem;
+}
+.contact-section .googlemaps__text ul {
+  margin-top: 4rem;
+  line-height: 2.6rem;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=main.css.map */
