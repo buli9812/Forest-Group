@@ -343,8 +343,9 @@ a {
 
 .contact-section {
 	.contact {
+		background-color: $light-white;
 		&__header {
-			margin: 2rem;
+			padding: 2rem;
 			p {
 				font-size: 2rem;
 				margin-top: 2rem;
@@ -374,9 +375,9 @@ a {
 		}
 	}
 	.googlemaps {
-		margin-bottom: 2rem;
+		padding-bottom: 2rem;
 		&__text {
-			margin: 2rem;
+			padding: 2rem;
 			ul {
 				margin-top: 4rem;
 				line-height: 2.6rem;

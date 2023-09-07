@@ -302,8 +302,11 @@ a {
   padding: 0.8rem;
 }
 
+.contact-section .contact {
+  background-color: #eee;
+}
 .contact-section .contact__header {
-  margin: 2rem;
+  padding: 2rem;
 }
 .contact-section .contact__header p {
   font-size: 2rem;
@@ -332,10 +335,10 @@ a {
   resize: vertical;
 }
 .contact-section .googlemaps {
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .contact-section .googlemaps__text {
-  margin: 2rem;
+  padding: 2rem;
 }
 .contact-section .googlemaps__text ul {
   margin-top: 4rem;
