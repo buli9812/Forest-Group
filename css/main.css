@@ -20,12 +20,14 @@ html {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 4.6rem;
   font-weight: 500;
+  padding: 4rem 0;
 }
 
 h3 {
   font-size: 2.6rem;
+  font-weight: 400;
 }
 
 body,
@@ -50,6 +52,7 @@ a {
   height: 100%;
   max-width: 1200px;
   text-align: center;
+  padding: 0 2rem;
 }
 
 .dpnone {
@@ -68,7 +71,7 @@ a {
   position: fixed;
   top: 0px;
   right: 0px;
-  padding: 4em;
+  padding: 3em;
   border: 1px solid transparent;
   z-index: 100;
   cursor: pointer;
@@ -143,10 +146,6 @@ a {
 .aboutus {
   background-color: #fff;
 }
-.aboutus h2 {
-  margin: 2rem 0;
-  font-weight: 500;
-}
 .aboutus .wrapper {
   display: flex;
   flex-direction: column;
@@ -163,7 +162,7 @@ a {
 .aboutus__text p {
   text-align: justify;
   font-size: 2rem;
-  margin: 2em 1em;
+  margin-bottom: 2rem;
 }
 
 .banner__img {
@@ -205,10 +204,6 @@ a {
 .offer .fa-minus {
   color: #aca5a5;
 }
-.offer h2 {
-  padding: 4rem 0;
-  font-weight: 400;
-}
 .offer p {
   font-size: 2rem;
 }
@@ -221,8 +216,8 @@ a {
   color: #ffffff;
   display: inline-block;
   text-align: center;
-  margin-top: 1.6rem;
-  margin-bottom: 6.4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-weight: 600;
 }
 .offer__cards {
@@ -232,7 +227,7 @@ a {
 .offer__card {
   display: inline-block;
   position: relative;
-  width: 240px;
+  width: 220px;
   height: 100%;
   margin: 2rem;
   box-shadow: 0px 3px 10px -3px #000000;
@@ -243,7 +238,6 @@ a {
 }
 .offer__card h3 {
   margin: 2rem;
-  font-weight: 400;
 }
 .offer__card ul {
   text-align: left;
@@ -288,15 +282,13 @@ a {
   padding-bottom: 0.8em;
   text-align: left;
 }
-.footer .container-r .footer__card {
-  font-size: 1.3rem;
-}
 .footer .container-r .footer__card li {
+  font-size: 1.2rem;
   padding: 1rem 0;
 }
 .footer .container-r .footer__card li:first-child {
   top: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -309,15 +301,14 @@ a {
   padding: 0.8rem;
 }
 
+.contact-section {
+  background-color: #eee;
+}
 .contact-section .contact {
   background-color: #eee;
 }
-.contact-section .contact__header {
-  padding: 2rem;
-}
 .contact-section .contact__header p {
   font-size: 2rem;
-  margin-top: 2rem;
 }
 .contact-section .contact__box {
   display: flex;
@@ -341,15 +332,17 @@ a {
   min-height: 150px;
   resize: vertical;
 }
-.contact-section .googlemaps {
+
+.maps-section {
   background-color: #fff;
-  padding-bottom: 2rem;
 }
-.contact-section .googlemaps__text {
-  padding: 2rem;
+.maps-section .googlemaps {
+  background-color: #fff;
 }
-.contact-section .googlemaps__text ul {
-  margin-top: 4rem;
+.maps-section .googlemaps__map {
+  padding: 2rem 0;
+}
+.maps-section .googlemaps__text ul {
   line-height: 2.6rem;
   font-size: 1.6rem;
 }/*# sourceMappingURL=main.css.map */
