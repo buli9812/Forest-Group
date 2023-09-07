@@ -20,13 +20,13 @@ html {
 }
 
 h2 {
-  font-size: 4.6rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 300;
   padding: 4rem 0;
 }
 
 h3 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 
@@ -157,7 +157,7 @@ a {
   font-weight: 600;
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 5rem 0;
 }
 .aboutus__text p {
   text-align: justify;
@@ -204,7 +204,7 @@ a {
 .offer .fa-minus {
   color: #aca5a5;
 }
-.offer p {
+.offer__text {
   font-size: 2rem;
 }
 .offer__cta-btn {
@@ -222,7 +222,6 @@ a {
 }
 .offer__cards {
   margin: 4rem 0;
-  overflow: hidden;
 }
 .offer__card {
   display: inline-block;
@@ -233,18 +232,13 @@ a {
   box-shadow: 0px 3px 10px -3px #000000;
   border-radius: 10px;
 }
-.offer__card-price {
-  font-size: 4rem !important;
-}
 .offer__card h3 {
   margin: 2rem;
 }
 .offer__card ul {
   text-align: left;
-  padding-left: 3.3rem;
-}
-.offer__card ul li {
-  width: 100%;
+  display: inline-block;
+  justify-content: center;
 }
 .offer__card-price {
   font-size: 4rem;
@@ -261,9 +255,6 @@ a {
 }
 .offer__card-li-negative {
   color: rgb(172, 165, 165);
-}
-.offer__card:last-child ul {
-  padding-left: 4.8rem;
 }
 
 .footer {
@@ -345,4 +336,40 @@ a {
 .maps-section .googlemaps__text ul {
   line-height: 2.6rem;
   font-size: 1.6rem;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 5.6rem;
+  }
+  .wrapper {
+    padding: 0 3rem;
+  }
+  .header__text {
+    font-size: 2.6rem;
+  }
+  .aboutus {
+    line-height: 300%;
+  }
+  .aboutus h3 {
+    font-size: 3rem;
+  }
+  .banner__text {
+    font-size: 2.6em;
+  }
+  .offer__card {
+    width: 260px;
+  }
+  .footer .container-l {
+    font-size: 3.6em;
+  }
+  .footer .container-r {
+    padding-bottom: 1.8rem;
+  }
+  .footer .container-r .footer__card li {
+    font-size: 1.6rem;
+  }
+  .footer .container-r .footer__card li:first-child {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=main.css.map */
