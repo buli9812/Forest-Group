@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  background-color: #000000;
 }
 
 html {
@@ -139,6 +140,9 @@ a {
   font-weight: 600;
 }
 
+.aboutus {
+  background-color: #fff;
+}
 .aboutus h2 {
   margin: 2rem 0;
   font-weight: 500;
@@ -192,6 +196,9 @@ a {
   z-index: 20;
 }
 
+.offer {
+  background-color: #fff;
+}
 .offer .fa-check {
   color: #00ffaa;
 }
@@ -335,6 +342,7 @@ a {
   resize: vertical;
 }
 .contact-section .googlemaps {
+  background-color: #fff;
   padding-bottom: 2rem;
 }
 .contact-section .googlemaps__text {

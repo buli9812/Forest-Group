@@ -11,6 +11,7 @@
 html,
 body {
 	height: 100%;
+	background-color: $vanta-black;
 }
 
 html {
@@ -30,7 +31,6 @@ h3 {
 body,
 button {
 	font-family: 'Raleway', sans-serif;
-	// background-color: transparent;
 }
 ul {
 	list-style: none;
@@ -148,6 +148,7 @@ a {
 //about us
 
 .aboutus {
+	background-color: $pure-white;
 	h2 {
 		margin: 2rem 0;
 		font-weight: 500;
@@ -213,6 +214,7 @@ a {
 // offer - sprawdzic i usunac important
 
 .offer {
+	background-color: $pure-white;
 	.fa-check {
 		color: $green-color;
 	}
@@ -375,6 +377,7 @@ a {
 		}
 	}
 	.googlemaps {
+		background-color: $pure-white;
 		padding-bottom: 2rem;
 		&__text {
 			padding: 2rem;
