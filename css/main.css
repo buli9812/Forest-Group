@@ -68,6 +68,11 @@ a {
   color: black;
 }
 
+.nav-activeblock {
+  background-color: #000000;
+  color: #fff;
+}
+
 .burger-menu {
   position: fixed;
   top: 0px;
