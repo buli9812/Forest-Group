@@ -528,4 +528,7 @@ a {
   .footer .container-r .footer__card:first-child {
     padding-right: 0;
   }
+  .googlemaps__mapframe {
+    height: 48rem;
+  }
 }/*# sourceMappingURL=main.css.map */

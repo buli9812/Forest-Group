@@ -177,4 +177,9 @@
 			}
 		}
 	}
+	.googlemaps {
+		&__mapframe {
+			height: 48rem;
+		}
+	}
 }
