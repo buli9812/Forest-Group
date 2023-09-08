@@ -215,7 +215,7 @@ a {
 }
 
 .banner__img {
-  height: 250px;
+  height: 25rem;
   background-image: url("/dist/img/girl-small.jpg");
   background-position: center;
   background-attachment: fixed;
@@ -238,7 +238,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
-  padding: 1em 1em;
+  padding: 4rem;
   color: #fff;
   border: 1px solid #fff;
   z-index: 20;
@@ -431,7 +431,8 @@ a {
   }
 }
 @media (min-width: 1200px) {
-  .nav-mobile {
+  .nav-mobile,
+  .burger-menu {
     display: none;
   }
   .nav-desktop {
@@ -439,5 +440,92 @@ a {
   }
   .header {
     margin-top: 9rem;
+  }
+  .header .wrapper {
+    justify-content: left;
+    text-align: left;
+  }
+  .header__img {
+    background-image: url("/dist/img/jungle-big.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .aboutus__content {
+    display: flex;
+    flex-direction: row;
+  }
+  .aboutus__img {
+    width: 90%;
+  }
+  .aboutus__img-box {
+    width: 50%;
+  }
+  .aboutus__text {
+    width: 50%;
+  }
+  .aboutus__text p {
+    display: block;
+    text-align: justify;
+    padding: 0;
+  }
+  .aboutus__text h3 {
+    text-align: left;
+    display: block;
+    margin: 0 0 3rem 0;
+  }
+  .banner__img {
+    background-image: url("/dist/img/girl-big.jpg");
+    height: 30rem;
+  }
+  .banner__text {
+    font-size: 4em;
+    font-weight: 600;
+  }
+  .offer__card {
+    transition: transform 0.5s;
+  }
+  .offer__card:hover {
+    transform: scale(1.1);
+  }
+  .offer__card-btn {
+    transition: background-color 0.5s;
+  }
+  .offer__card-btn:hover {
+    background-color: #00ffaa;
+  }
+  .footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 3.6rem 0;
+  }
+  .footer .container-l {
+    left: 0;
+    font-size: 5rem;
+    width: 50%;
+    padding: 0;
+  }
+  .footer .container-l a {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .footer .container-r {
+    width: 50%;
+    padding: 0;
+  }
+  .footer .container-r .footer__card {
+    padding-right: 3em;
+    font-size: 1.6rem;
+  }
+  .footer .container-r .footer__card li:first-child {
+    padding: 2rem 0;
+    font-size: 2.6rem;
+    font-weight: 600;
+    width: 145px;
+  }
+  .footer .container-r .footer__card:first-child {
+    padding-right: 0;
   }
 }/*# sourceMappingURL=main.css.map */

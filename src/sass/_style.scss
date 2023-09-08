@@ -232,7 +232,7 @@ a {
 
 .banner {
 	&__img {
-		height: 250px;
+		height: 25rem;
 		background-image: url('/dist/img/girl-small.jpg');
 		background-position: center;
 		background-attachment: fixed;
@@ -255,7 +255,7 @@ a {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		font-size: 2rem;
-		padding: 1em 1em;
+		padding: 4rem;
 		color: $pure-white;
 		border: 1px solid $pure-white;
 		z-index: 20;
