@@ -49,6 +49,10 @@
 }
 
 @media (min-width: 992px) {
+	h2 {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
 	.aboutus {
 		&__text {
 			h3 {
