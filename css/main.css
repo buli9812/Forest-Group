@@ -166,7 +166,7 @@ a {
 .header__img {
   position: relative;
   min-height: 400px;
-  background-image: url("/dist/img/jungle-small.jpg");
+  background-image: url("./dist/img/jungle-small.jpg");
   background-position: 20% 0;
   background-size: cover;
   z-index: 0;
@@ -216,7 +216,7 @@ a {
 
 .banner__img {
   height: 25rem;
-  background-image: url("/dist/img/girl-small.jpg");
+  background-image: url("./dist/img/girl-small.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
