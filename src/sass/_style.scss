@@ -11,6 +11,7 @@
 html,
 body {
 	height: 100%;
+	background-color: $vanta-black;
 }
 
 html {
@@ -20,19 +21,24 @@ html {
 	overflow-x: hidden;
 }
 h2 {
-	font-size: 3.6rem;
+	font-size: 4rem;
+	font-weight: 300;
+	padding: 4rem 0;
+	text-transform: uppercase;
 }
 h3 {
-	font-size: 2.6rem;
+	font-size: 3rem;
+	font-weight: 400;
 }
 
 body,
 button {
 	font-family: 'Raleway', sans-serif;
-	// background-color: transparent;
 }
 ul {
 	list-style: none;
+	line-height: 2.6rem;
+	font-size: 1.6rem;
 }
 a {
 	text-decoration: none;
@@ -45,6 +51,7 @@ a {
 	height: 100%;
 	max-width: 1200px;
 	text-align: center;
+	padding: 0 2rem;
 }
 //js modifiers
 .dpnone {
@@ -56,6 +63,10 @@ a {
 .black-bars-color {
 	color: black;
 }
+.nav-activeblock {
+	background-color: $vanta-black;
+	color: $pure-white;
+}
 //nav
 
 //mobile
@@ -64,7 +75,7 @@ a {
 	position: fixed;
 	top: 0px;
 	right: 0px;
-	padding: 4em;
+	padding: 3em;
 	border: 1px solid transparent;
 	z-index: 100;
 	cursor: pointer;
@@ -102,6 +113,52 @@ a {
 		color: $vanta-black;
 		padding: 1em 2em;
 		font-size: 3rem;
+	}
+}
+//desktop
+
+.nav-desktop {
+	display: none;
+	font-size: 1.6rem;
+	background-color: $pure-white;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 9rem;
+	box-shadow: 0px -8px 17px 8px $vanta-black;
+	z-index: 100;
+
+	&__logo {
+		padding: 3rem 0;
+		position: absolute;
+		font-size: 3rem;
+		span {
+			padding-left: 1rem;
+		}
+	}
+	&__list {
+		position: absolute;
+		display: flex;
+		right: 0;
+
+		&-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 10rem;
+			padding: 0 2rem;
+			cursor: pointer;
+			transition: background-color 0.4s;
+			height: 9rem;
+			a {
+				padding: 3rem;
+			}
+			&:hover {
+				background-color: $vanta-black;
+				color: $pure-white;
+			}
+		}
 	}
 }
 
@@ -145,10 +202,8 @@ a {
 //about us
 
 .aboutus {
-	h2 {
-		margin: 2rem 0;
-		font-weight: 500;
-	}
+	background-color: $pure-white;
+
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -163,12 +218,12 @@ a {
 			display: flex;
 			justify-content: center;
 
-			margin: 2rem 0;
+			margin: 5rem 0;
 		}
 		p {
 			text-align: justify;
 			font-size: 2rem;
-			margin: 2em 1em;
+			margin-bottom: 2rem;
 		}
 	}
 }
@@ -177,7 +232,7 @@ a {
 
 .banner {
 	&__img {
-		height: 250px;
+		height: 25rem;
 		background-image: url('/dist/img/girl-small.jpg');
 		background-position: center;
 		background-attachment: fixed;
@@ -200,7 +255,7 @@ a {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		font-size: 2rem;
-		padding: 1em 1em;
+		padding: 4rem;
 		color: $pure-white;
 		border: 1px solid $pure-white;
 		z-index: 20;
@@ -210,23 +265,16 @@ a {
 // offer - sprawdzic i usunac important
 
 .offer {
+	background-color: $pure-white;
 	.fa-check {
 		color: $green-color;
 	}
 	.fa-minus {
 		color: $grey-color;
 	}
-	// justify-content: center;
-	// align-items: center;
-	// font-size: 2rem;
-	h2 {
-		padding: 4rem 0;
-		font-weight: 400;
-	}
-	p {
+	&__text {
 		font-size: 2rem;
 	}
-
 	&__cta-btn {
 		position: relative;
 		background-color: $cta-button-color;
@@ -236,41 +284,30 @@ a {
 		color: #ffffff;
 		display: inline-block;
 		text-align: center;
-		margin-top: 1.6rem;
-		margin-bottom: 6.4rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 		font-weight: 600;
 	}
 	&__cards {
 		margin: 4rem 0;
-		overflow: hidden;
+		// overflow: hidden;
 	}
 
 	&__card {
-		&-price {
-			font-size: 4rem !important;
-		}
-		h3 {
-			margin: 2rem;
-			font-weight: 400;
-		}
-		ul {
-			text-align: left;
-			padding-left: 3.3rem;
-			li {
-				width: 100%;
-				font-size: 1.6rem;
-				line-height: 2.6rem;
-			}
-		}
-
 		display: inline-block;
 		position: relative;
-		width: 240px;
+		width: 220px;
 		height: 100%;
 		margin: 2rem;
 		box-shadow: 0px 3px 10px -3px $vanta-black;
 		border-radius: 10px;
-
+		h3 {
+			margin: 2rem;
+		}
+		ul {
+			text-align: center;
+			display: inline-block;
+		}
 		&-price {
 			font-size: 4rem;
 			font-weight: 600;
@@ -286,11 +323,6 @@ a {
 		}
 		&-li-negative {
 			color: $li-negative;
-		}
-	}
-	&__card:last-child {
-		ul {
-			padding-left: 4.8rem;
 		}
 	}
 }
@@ -314,14 +346,13 @@ a {
 		padding-bottom: 0.8em;
 		text-align: left;
 		.footer__card {
-			font-size: 1.3rem;
-
 			li {
+				font-size: 1.2rem;
 				padding: 1rem 0;
 			}
 			li:first-child {
 				top: 0;
-				font-size: 1.8rem;
+				font-size: 1.5rem;
 				font-weight: 600;
 			}
 		}
@@ -335,4 +366,56 @@ a {
 	border-top: 1px solid $li-negative;
 	font-size: 1.6rem;
 	padding: 0.8rem;
+}
+
+// page contact section
+
+.contact-section {
+	background-color: $light-white;
+	.contact {
+		background-color: $light-white;
+		&__header {
+			p {
+				font-size: 2rem;
+			}
+		}
+		&__box {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin: 3rem auto;
+			label {
+				font-size: 2rem;
+				margin-bottom: 1rem;
+			}
+			input,
+			textarea {
+				padding: 1.5rem;
+				font-size: 2rem;
+				font-family: inherit;
+				border: 2px solid $grey-color;
+				border-radius: 10px;
+			}
+			textarea {
+				min-height: 150px;
+				resize: vertical;
+			}
+		}
+	}
+}
+
+.maps-section {
+	background-color: $pure-white;
+	.googlemaps {
+		background-color: $pure-white;
+		&__map {
+			padding: 2rem 0;
+		}
+		&__text {
+			ul {
+				line-height: 2.6rem;
+				font-size: 1.6rem;
+			}
+		}
+	}
 }
