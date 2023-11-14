@@ -20,6 +20,10 @@ html {
 	scrollbar-color: $dark;
 	overflow-x: hidden;
 }
+p {
+	font-weight: 300;
+	line-height: 145%;
+}
 h2 {
 	font-size: 4rem;
 	font-weight: 300;
@@ -34,6 +38,10 @@ h3 {
 body,
 button {
 	font-family: 'Raleway', sans-serif;
+}
+button {
+	cursor: pointer;
+	border: 0;
 }
 ul {
 	list-style: none;
@@ -127,7 +135,11 @@ a {
 	height: 9rem;
 	box-shadow: 0px -8px 17px 8px $vanta-black;
 	z-index: 100;
-
+	.wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+	}
 	&__logo {
 		padding: 3rem 0;
 		position: absolute;
@@ -171,9 +183,9 @@ a {
 	}
 	&__img {
 		position: relative;
-		min-height: 400px;
-		background-image: url('./dist/img/jungle-small.jpg');
-		background-position: 20% 0;
+		min-height: 560px;
+		background-image: url('/dist/img/jungle-small.jpg');
+		background-position: 20% 50%;
 		background-size: cover;
 		z-index: 0;
 	}
@@ -233,7 +245,7 @@ a {
 .banner {
 	&__img {
 		height: 25rem;
-		background-image: url('./dist/img/girl-small.jpg');
+		background-image: url('/dist/img/girl-small.jpg');
 		background-position: center;
 		background-attachment: fixed;
 		background-size: cover;
@@ -280,7 +292,7 @@ a {
 		background-color: $cta-button-color;
 		border-radius: 15px;
 		padding: 1rem 7rem;
-		font-size: 2rem;
+		font-size: 3rem;
 		color: #ffffff;
 		display: inline-block;
 		text-align: center;
@@ -365,7 +377,7 @@ a {
 	background-color: $light-white;
 	border-top: 1px solid $li-negative;
 	font-size: 1.6rem;
-	padding: 0.8rem;
+	padding: 1.4rem;
 }
 
 // page contact section
@@ -374,6 +386,16 @@ a {
 	background-color: $light-white;
 	.contact {
 		background-color: $light-white;
+
+		button,
+		input,
+		textarea {
+			padding: 1.5rem;
+			font-size: 2rem;
+			font-family: inherit;
+			border: 2px solid $grey-color;
+			border-radius: 10px;
+		}
 		&__header {
 			p {
 				font-size: 2rem;
@@ -388,18 +410,14 @@ a {
 				font-size: 2rem;
 				margin-bottom: 1rem;
 			}
-			input,
-			textarea {
-				padding: 1.5rem;
-				font-size: 2rem;
-				font-family: inherit;
-				border: 2px solid $grey-color;
-				border-radius: 10px;
-			}
+
 			textarea {
 				min-height: 150px;
 				resize: vertical;
 			}
+		}
+		&__form {
+			padding-bottom: 2rem;
 		}
 	}
 }
