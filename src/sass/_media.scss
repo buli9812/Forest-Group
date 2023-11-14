@@ -16,6 +16,12 @@
 		h3 {
 			font-size: 3rem;
 		}
+		&__text {
+			p {
+				padding: 0 2rem;
+				margin-bottom: 4rem;
+			}
+		}
 	}
 
 	.banner {
@@ -27,6 +33,23 @@
 	.offer {
 		&__card {
 			width: 260px;
+		}
+		&__cta-btn {
+			margin: 4rem 0;
+		}
+	}
+	.contact-section {
+		.contact {
+			&__form {
+				padding-bottom: 4rem;
+			}
+		}
+	}
+	.maps-section {
+		.googlemaps {
+			&__map {
+				padding: 4rem 0;
+			}
 		}
 	}
 
@@ -49,17 +72,20 @@
 }
 
 @media (min-width: 992px) {
-	h2 {
-		padding-left: 4rem;
-		padding-right: 4rem;
-	}
+	// h2 {
+	// 	padding-left: 4rem;
+	// 	padding-right: 4rem;
+	// }
 	.aboutus {
 		&__text {
 			h3 {
-				font-size: 4rem;
+				font-size: 3rem;
 			}
 			p {
-				padding: 0 4rem;
+				padding: 0 6rem;
+				font-size: 2rem;
+				// margin-bottom: 6rem;
+				// line-height: 145%;
 			}
 		}
 	}
@@ -89,34 +115,45 @@
 
 @media (min-width: 1200px) {
 	.aboutus {
+		h2 {
+			padding: 5rem 0;
+			font-size: 4.6rem;
+		}
 		&__content {
 			display: flex;
 			flex-direction: row;
+			margin-bottom: 7rem;
 		}
 		&__img {
-			width: 90%;
+			// width: 105%;
+			width: 600px;
+			height: 400px;
+			margin-right: 6rem;
 		}
-		&__img-box {
-			width: 50%;
-		}
+		// &__img-box {
+		// 	width: 50%;
+		// }
 		&__text {
-			width: 50%;
-			p {
-				display: block;
-				text-align: justify;
-				padding: 0;
-			}
+			// width: 50%;
+
 			h3 {
 				text-align: left;
 				display: block;
 				margin: 0 0 3rem 0;
+			}
+			p {
+				display: block;
+				text-align: justify;
+				padding: 0;
+				margin: 0;
+				font-size: 2.2rem;
 			}
 		}
 	}
 	.banner {
 		&__img {
 			background-image: url('/dist/img/girl-big.jpg');
-			height: 30rem;
+			height: 35rem;
 		}
 		&__text {
 			font-size: 4em;
@@ -142,7 +179,7 @@
 		.wrapper {
 			display: flex;
 			flex-direction: row;
-			padding: 3.6rem 0;
+			padding: 8.6rem 0;
 		}
 		.container-l {
 			left: 0;
