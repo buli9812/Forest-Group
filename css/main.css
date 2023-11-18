@@ -6,10 +6,14 @@
   padding: 0;
 }
 
+input::-webkit-calendar-picker-indicator {
+  opacity: 100;
+}
+
 html,
 body {
   height: 100%;
-  background-color: #000000;
+  background-color: #fff;
 }
 
 html {
@@ -19,10 +23,15 @@ html {
   overflow-x: hidden;
 }
 
-h2 {
-  font-size: 4rem;
+p {
   font-weight: 300;
-  padding: 4rem 0;
+  line-height: 145%;
+}
+
+h2 {
+  font-size: 4.6rem;
+  font-weight: 300;
+  padding: 6rem 0;
   text-transform: uppercase;
 }
 
@@ -36,6 +45,12 @@ button {
   font-family: "Raleway", sans-serif;
 }
 
+button {
+  cursor: pointer;
+  border: 0;
+  color: #000000;
+}
+
 ul {
   list-style: none;
   line-height: 2.6rem;
@@ -44,6 +59,10 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000000;
+}
+
+input {
   color: #000000;
 }
 
@@ -127,6 +146,11 @@ a {
   box-shadow: 0px -8px 17px 8px #000000;
   z-index: 100;
 }
+.nav-desktop .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
 .nav-desktop__logo {
   padding: 3rem 0;
   position: absolute;
@@ -165,9 +189,9 @@ a {
 }
 .header__img {
   position: relative;
-  min-height: 400px;
-  background-image: url("./dist/img/jungle-small.jpg");
-  background-position: 20% 0;
+  min-height: 560px;
+  background-image: url("../../dist/img/jungle-small.jpg");
+  background-position: 20% 50%;
   background-size: cover;
   z-index: 0;
 }
@@ -200,26 +224,26 @@ a {
   flex-direction: column;
 }
 .aboutus__img {
-  width: 80%;
+  width: 100%;
 }
 .aboutus__text h3 {
   font-weight: 600;
   display: flex;
   justify-content: center;
+  font-size: 2.6rem;
   margin: 5rem 0;
 }
 .aboutus__text p {
   text-align: justify;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .banner__img {
   height: 25rem;
-  background-image: url("./dist/img/girl-small.jpg");
+  background-image: url("../../dist/img/girl-small.jpg");
   background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  background-size: 135%;
   z-index: 0;
   position: relative;
 }
@@ -258,19 +282,18 @@ a {
 }
 .offer__cta-btn {
   position: relative;
-  background-color: #1755e7;
+  background-color: #00ffaa;
   border-radius: 15px;
-  padding: 1rem 7rem;
-  font-size: 2rem;
-  color: #ffffff;
+  padding: 2rem 4rem;
+  font-size: 2.6rem;
+  color: #000000;
   display: inline-block;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0 2rem 0;
   font-weight: 600;
 }
 .offer__cards {
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 .offer__card {
   display: inline-block;
@@ -291,7 +314,7 @@ a {
 .offer__card-price {
   font-size: 4rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .offer__card-btn {
   font-size: 1.6rem;
@@ -313,7 +336,7 @@ a {
   padding: 0.8em 0;
 }
 .footer .container-l i {
-  padding: 0 2rem;
+  padding: 0 2rem 0 0;
 }
 .footer .container-r {
   display: flex;
@@ -337,53 +360,82 @@ a {
   background-color: #eee;
   border-top: 1px solid rgb(172, 165, 165);
   font-size: 1.6rem;
-  padding: 0.8rem;
+  padding: 1.4rem;
 }
 
 .contact-section {
-  background-color: #eee;
+  background-color: #fff;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.contact-section .contact {
-  background-color: #eee;
+.contact-section h2 {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 5rem;
 }
-.contact-section .contact__header p {
+.contact-section__info {
+  margin-top: 4rem;
+}
+.contact-section__info i {
+  padding-right: 2rem;
+}
+.contact-section__info p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.contact-section .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section__map {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+.contact-section__map .googlemaps__mapframe {
+  border-radius: 15px;
+}
+.contact-section__content {
+  border-radius: 15px;
+}
+.contact-section__content .btn-form {
+  margin: 2rem 0;
+}
+.contact-section__content button,
+.contact-section__content input,
+.contact-section__content textarea,
+.contact-section__content select {
+  padding: 1.5rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  background-color: #eee;
+  border: 1px solid #c5c5c5;
+}
+.contact-section__content-header h2 {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+.contact-section__content-header p {
   font-size: 2rem;
 }
-.contact-section .contact__box {
+.contact-section__content-box {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: 3rem auto;
 }
-.contact-section .contact__box label {
+.contact-section__content-box label {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.contact-section .contact__box input,
-.contact-section .contact__box textarea {
-  padding: 1.5rem;
-  font-size: 2rem;
-  font-family: inherit;
-  border: 2px solid #aca5a5;
-  border-radius: 10px;
-}
-.contact-section .contact__box textarea {
+.contact-section__content-box textarea {
   min-height: 150px;
   resize: vertical;
 }
-
-.maps-section {
-  background-color: #fff;
-}
-.maps-section .googlemaps {
-  background-color: #fff;
-}
-.maps-section .googlemaps__map {
-  padding: 2rem 0;
-}
-.maps-section .googlemaps__text ul {
-  line-height: 2.6rem;
-  font-size: 1.6rem;
+.contact-section__content-form {
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 576px) {
@@ -399,11 +451,26 @@ a {
   .aboutus h3 {
     font-size: 3rem;
   }
+  .aboutus__text p {
+    margin-bottom: 4rem;
+  }
+  .aboutus__img {
+    max-width: 744px;
+  }
   .banner__text {
     font-size: 2.6em;
   }
   .offer__card {
     width: 260px;
+  }
+  .contact-section__content-form {
+    padding-bottom: 0;
+  }
+  .contact-section__map {
+    height: 450px;
+  }
+  .contact-section__info p {
+    font-size: 2rem;
   }
   .footer .container-l {
     font-size: 3.6em;
@@ -419,15 +486,15 @@ a {
   }
 }
 @media (min-width: 992px) {
-  h2 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
   .aboutus__text h3 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .aboutus__text p {
-    padding: 0 4rem;
+    padding: 0 6rem;
+    font-size: 2rem;
+  }
+  .aboutus__img {
+    max-width: 744px;
   }
 }
 @media (min-width: 1200px) {
@@ -446,36 +513,39 @@ a {
     text-align: left;
   }
   .header__img {
-    background-image: url("/dist/img/jungle-big.jpg");
+    background-image: url("../../dist/img/jungle-big.jpg");
+    height: 610px;
   }
 }
 @media (min-width: 1200px) {
+  h2 {
+    font-size: 4.6rem;
+  }
   .aboutus__content {
     display: flex;
     flex-direction: row;
+    margin-bottom: 7rem;
   }
   .aboutus__img {
-    width: 90%;
-  }
-  .aboutus__img-box {
-    width: 50%;
-  }
-  .aboutus__text {
-    width: 50%;
-  }
-  .aboutus__text p {
-    display: block;
-    text-align: justify;
-    padding: 0;
+    width: 550px;
+    height: 366px;
+    margin-right: 6rem;
   }
   .aboutus__text h3 {
     text-align: left;
     display: block;
     margin: 0 0 3rem 0;
   }
+  .aboutus__text p {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+  }
   .banner__img {
-    background-image: url("/dist/img/girl-big.jpg");
-    height: 30rem;
+    background-image: url("../../dist/img/girl-big.jpg");
+    height: 50rem;
   }
   .banner__text {
     font-size: 4em;
@@ -492,6 +562,32 @@ a {
   }
   .offer__card-btn:hover {
     background-color: #00ffaa;
+  }
+  .contact-section .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-section__info p {
+    font-size: 2.6rem;
+  }
+  .contact-section__content {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
+    margin-right: 5rem;
+  }
+  .contact-section__content-header h3 {
+    font-size: 3rem;
+    padding: 3rem 2rem;
+  }
+  .contact-section__content-header p {
+    padding: 0 2rem;
+  }
+  .contact-section__map {
+    width: 70%;
+    height: 964px;
+    margin-top: 0.6rem;
+    box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
   }
   .footer .wrapper {
     display: flex;
@@ -527,8 +623,5 @@ a {
   }
   .footer .container-r .footer__card:first-child {
     padding-right: 0;
-  }
-  .googlemaps__mapframe {
-    height: 48rem;
   }
 }/*# sourceMappingURL=main.css.map */
