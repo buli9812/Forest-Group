@@ -192,7 +192,7 @@ input {
 	&__img {
 		position: relative;
 		min-height: 560px;
-		background-image: url('/dist/img/jungle-small.jpg');
+		background-image: url('../../dist/img/jungle-small.jpg');
 		background-position: 20% 50%;
 		background-size: cover;
 		z-index: 0;
@@ -253,7 +253,7 @@ input {
 .banner {
 	&__img {
 		height: 25rem;
-		background-image: url('/dist/img/girl-small.jpg');
+		background-image: url('../../dist/img/girl-small.jpg');
 		background-position: center;
 		// background-attachment: fixed;
 		// background-size: cover;

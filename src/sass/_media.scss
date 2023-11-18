@@ -117,7 +117,7 @@
 			text-align: left;
 		}
 		&__img {
-			background-image: url('/dist/img/jungle-big.jpg');
+			background-image: url('../../dist/img/jungle-big.jpg');
 			height: 610px;
 		}
 	}
@@ -162,7 +162,7 @@
 	}
 	.banner {
 		&__img {
-			background-image: url('/dist/img/girl-big.jpg');
+			background-image: url('../../dist/img/girl-big.jpg');
 			height: 50rem;
 		}
 		&__text {
@@ -186,7 +186,6 @@
 	}
 
 	.contact-section {
-		
 		.wrapper {
 			display: flex;
 			flex-direction: row;
