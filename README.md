@@ -23,11 +23,11 @@
 
 <h4 align="center">Website preview in 576px on mobile</h4>
 
-<div align="center"> ![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/Forest-Group576mobile.png) </div>
+![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/Forest-Group576mobile.png) 
 
 <h4 align="center">Website preview in 320px on mobile</h4>
 
-<div align="center"> ![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/Forest-Group320mobile.png) </div>
+![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/Forest-Group320mobile.png) 
 
 
 <h3 align="center">Languages and Tools used in this project:</h3>
