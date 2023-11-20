@@ -86,6 +86,9 @@
 }
 
 @media (min-width: 1200px) {
+	h2 {
+		font-size: 4.6rem;
+	}
 	.nav-mobile,
 	.burger-menu {
 		display: none;
@@ -102,12 +105,9 @@
 			text-align: left;
 		}
 		&__img {
-			background-image: url('../../dist/img/jungle-big.jpg');
 			height: 610px;
+			background-image: url('../../dist/img/jungle-big.jpg');
 		}
-	}
-	h2 {
-		font-size: 4.6rem;
 	}
 	.aboutus {
 		&__content {
@@ -116,30 +116,30 @@
 			margin-bottom: 7rem;
 		}
 		&__img {
+			margin-right: 6rem;
 			width: 550px;
 			height: 366px;
-			margin-right: 6rem;
 		}
 
 		&__text {
 			h3 {
-				text-align: left;
 				display: block;
 				margin: 0 0 3rem 0;
+				text-align: left;
 			}
 			p {
 				display: block;
-				text-align: justify;
 				padding: 0;
 				margin: 0;
+				text-align: justify;
 				font-size: 2rem;
 			}
 		}
 	}
 	.banner {
 		&__img {
-			background-image: url('../../dist/img/girl-big.jpg');
 			height: 50rem;
+			background-image: url('../../dist/img/girl-big.jpg');
 		}
 		&__text {
 			font-size: 4em;
@@ -171,10 +171,10 @@
 			}
 		}
 		&__content {
+			margin-right: 5rem;
 			width: 30%;
 			background-color: $pure-white;
 			box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
-			margin-right: 5rem;
 			&-header {
 				h3 {
 					font-size: 3rem;
@@ -186,9 +186,9 @@
 			}
 		}
 		&__map {
+			margin-top: 0.6rem;
 			width: 70%;
 			height: 964px;
-			margin-top: 0.6rem;
 			box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
 		}
 	}
@@ -200,9 +200,9 @@
 		}
 		.container-l {
 			left: 0;
-			font-size: 5rem;
 			width: 50%;
 			padding: 0;
+			font-size: 5rem;
 			a {
 				display: block;
 				position: relative;
@@ -212,16 +212,16 @@
 			}
 		}
 		.container-r {
-			width: 50%;
 			padding: 0;
+			width: 50%;
 			.footer__card {
 				padding-right: 3em;
 				font-size: 1.6rem;
 				li:first-child {
 					padding: 2rem 0;
+					width: 145px;
 					font-size: 2.6rem;
 					font-weight: 600;
-					width: 145px;
 				}
 			}
 			.footer__card:first-child {

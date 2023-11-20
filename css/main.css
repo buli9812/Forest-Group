@@ -98,8 +98,8 @@ input {
   right: 0px;
   padding: 3em;
   border: 1px solid transparent;
-  z-index: 100;
   cursor: pointer;
+  z-index: 100;
 }
 .burger-menu__button {
   color: #fff;
@@ -107,21 +107,20 @@ input {
   background: none;
 }
 .burger-menu__button i {
-  cursor: pointer;
   font-size: 4rem;
 }
 
 .nav-mobile {
   position: fixed;
   top: 0;
+  display: flex;
   height: 100vh;
   width: 100%;
   background-color: #fff;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-out;
-  display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
   z-index: 100;
 }
 .nav-mobile--active {
@@ -130,19 +129,19 @@ input {
 .nav-mobile__item {
   position: relative;
   display: block;
-  color: #000000;
   padding: 1em 2em;
+  color: #000000;
   font-size: 3rem;
 }
 
 .nav-desktop {
-  display: none;
-  font-size: 1.6rem;
-  background-color: #fff;
-  top: 0;
   position: fixed;
+  top: 0;
+  display: none;
   width: 100%;
   height: 9rem;
+  background-color: #fff;
+  font-size: 1.6rem;
   box-shadow: 0px -8px 17px 8px #000000;
   z-index: 100;
 }
@@ -152,8 +151,8 @@ input {
   flex-direction: row;
 }
 .nav-desktop__logo {
-  padding: 3rem 0;
   position: absolute;
+  padding: 3rem 0;
   font-size: 3rem;
 }
 .nav-desktop__logo span {
@@ -161,8 +160,8 @@ input {
 }
 .nav-desktop__list {
   position: absolute;
-  display: flex;
   right: 0;
+  display: flex;
 }
 .nav-desktop__list-item {
   display: flex;
@@ -171,16 +170,16 @@ input {
   height: 100%;
   width: 10rem;
   padding: 0 2rem;
-  cursor: pointer;
-  transition: background-color 0.4s;
   height: 9rem;
+  transition: background-color 0.4s;
+  cursor: pointer;
 }
 .nav-desktop__list-item a {
   padding: 3rem;
 }
 .nav-desktop__list-item:hover {
-  background-color: #000000;
   color: #fff;
+  background-color: #000000;
 }
 
 .header .wrapper {
@@ -206,9 +205,9 @@ input {
 }
 .header__text {
   position: absolute;
-  font-size: 1.6rem;
-  color: #fff;
   top: 50%;
+  color: #fff;
+  font-size: 1.6rem;
   transform: translateY(-50%);
   z-index: 20;
 }
@@ -227,25 +226,25 @@ input {
   width: 100%;
 }
 .aboutus__text h3 {
-  font-weight: 600;
   display: flex;
+  margin: 5rem 0;
   justify-content: center;
   font-size: 2.6rem;
-  margin: 5rem 0;
+  font-weight: 600;
 }
 .aboutus__text p {
-  text-align: justify;
-  font-size: 2rem;
   margin-bottom: 4rem;
+  font-size: 2rem;
+  text-align: justify;
 }
 
 .banner__img {
+  position: relative;
   height: 25rem;
   background-image: url("../../dist/img/girl-small.jpg");
   background-position: center;
   background-size: 135%;
   z-index: 0;
-  position: relative;
 }
 .banner__shadow {
   position: absolute;
@@ -260,11 +259,11 @@ input {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
   padding: 4rem;
   color: #fff;
+  font-size: 2rem;
   border: 1px solid #fff;
+  transform: translate(-50%, -50%);
   z-index: 20;
 }
 
@@ -280,49 +279,53 @@ input {
 .offer__text {
   font-size: 2rem;
 }
+.offer__smalltext {
+  margin: 0.5rem 0 2rem 0;
+  font-size: 1.2rem;
+}
 .offer__cta-btn {
   position: relative;
-  background-color: #00ffaa;
-  border-radius: 15px;
-  padding: 2rem 4rem;
-  font-size: 2.6rem;
-  color: #000000;
   display: inline-block;
-  text-align: center;
-  margin: 2rem 0 2rem 0;
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  color: #000000;
+  background-color: #00ffaa;
+  font-size: 2.6rem;
   font-weight: 600;
+  text-align: center;
 }
 .offer__cards {
   margin: 2rem 0;
 }
 .offer__card {
-  display: inline-block;
   position: relative;
+  display: inline-block;
+  margin: 2rem;
   width: 220px;
   height: 100%;
-  margin: 2rem;
-  box-shadow: 0px 3px 10px -3px #000000;
   border-radius: 10px;
+  box-shadow: 0px 3px 10px -3px #000000;
 }
 .offer__card h3 {
   margin: 2rem;
 }
 .offer__card ul {
-  text-align: center;
   display: inline-block;
+  text-align: center;
 }
 .offer__card-price {
+  margin-bottom: 2rem;
   font-size: 4rem;
   font-weight: 600;
-  margin-bottom: 2rem;
 }
 .offer__card-btn {
-  font-size: 1.6rem;
   padding: 1rem 5.2rem;
   margin: 3rem 0;
   background-color: #fff;
-  box-shadow: 0px 3px 10px -3px #000000;
   border-radius: 8px;
+  box-shadow: 0px 3px 10px -3px #000000;
+  font-size: 1.6rem;
 }
 .offer__card-li-negative {
   color: rgb(172, 165, 165);
@@ -332,8 +335,8 @@ input {
   background-color: #eee;
 }
 .footer .container-l {
-  font-size: 2.6rem;
   padding: 0.8em 0;
+  font-size: 2.6rem;
 }
 .footer .container-l i {
   padding: 0 2rem 0 0;
@@ -345,8 +348,8 @@ input {
   text-align: left;
 }
 .footer .container-r .footer__card li {
-  font-size: 1.2rem;
   padding: 1rem 0;
+  font-size: 1.2rem;
 }
 .footer .container-r .footer__card li:first-child {
   top: 0;
@@ -357,23 +360,23 @@ input {
 .data {
   display: block;
   text-align: center;
+  padding: 1.4rem;
   background-color: #eee;
   border-top: 1px solid rgb(172, 165, 165);
   font-size: 1.6rem;
-  padding: 1.4rem;
 }
 
 .contact-section {
-  background-color: #fff;
-  padding: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0;
+  background-color: #fff;
 }
 .contact-section h2 {
-  text-align: center;
   padding-top: 0;
   padding-bottom: 5rem;
+  text-align: center;
 }
 .contact-section__info {
   margin-top: 4rem;
@@ -382,8 +385,8 @@ input {
   padding-right: 2rem;
 }
 .contact-section__info p {
-  font-size: 1.5rem;
   margin-top: 2rem;
+  font-size: 1.5rem;
 }
 .contact-section .wrapper {
   display: flex;
@@ -408,10 +411,10 @@ input {
 .contact-section__content textarea,
 .contact-section__content select {
   padding: 1.5rem;
-  font-size: 2rem;
-  border-radius: 5px;
   background-color: #eee;
   border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  font-size: 2rem;
 }
 .contact-section__content-header h2 {
   font-size: 3.6rem;
@@ -423,12 +426,12 @@ input {
 .contact-section__content-box {
   display: flex;
   flex-direction: column;
-  width: 90%;
   margin: 3rem auto;
+  width: 90%;
 }
 .contact-section__content-box label {
-  font-size: 2rem;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 .contact-section__content-box textarea {
   min-height: 150px;
@@ -436,6 +439,30 @@ input {
 }
 .contact-section__content-form {
   padding-bottom: 2rem;
+}
+
+.msg-status {
+  display: none;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.success,
+.error {
+  position: relative;
+  display: flex;
+}
+
+.success {
+  background-color: #00ffaa;
+}
+
+.error {
+  background-color: #ff6347;
 }
 
 @media (min-width: 576px) {
@@ -498,6 +525,9 @@ input {
   }
 }
 @media (min-width: 1200px) {
+  h2 {
+    font-size: 4.6rem;
+  }
   .nav-mobile,
   .burger-menu {
     display: none;
@@ -513,11 +543,8 @@ input {
     text-align: left;
   }
   .header__img {
-    background-image: url("../../dist/img/jungle-big.jpg");
     height: 610px;
-  }
-  h2 {
-    font-size: 4.6rem;
+    background-image: url("../../dist/img/jungle-big.jpg");
   }
   .aboutus__content {
     display: flex;
@@ -525,25 +552,25 @@ input {
     margin-bottom: 7rem;
   }
   .aboutus__img {
+    margin-right: 6rem;
     width: 550px;
     height: 366px;
-    margin-right: 6rem;
   }
   .aboutus__text h3 {
-    text-align: left;
     display: block;
     margin: 0 0 3rem 0;
+    text-align: left;
   }
   .aboutus__text p {
     display: block;
-    text-align: justify;
     padding: 0;
     margin: 0;
+    text-align: justify;
     font-size: 2rem;
   }
   .banner__img {
-    background-image: url("../../dist/img/girl-big.jpg");
     height: 50rem;
+    background-image: url("../../dist/img/girl-big.jpg");
   }
   .banner__text {
     font-size: 4em;
@@ -569,10 +596,10 @@ input {
     font-size: 2.6rem;
   }
   .contact-section__content {
+    margin-right: 5rem;
     width: 30%;
     background-color: #fff;
     box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
-    margin-right: 5rem;
   }
   .contact-section__content-header h3 {
     font-size: 3rem;
@@ -582,9 +609,9 @@ input {
     padding: 0 2rem;
   }
   .contact-section__map {
+    margin-top: 0.6rem;
     width: 70%;
     height: 964px;
-    margin-top: 0.6rem;
     box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
   }
   .footer .wrapper {
@@ -594,9 +621,9 @@ input {
   }
   .footer .container-l {
     left: 0;
-    font-size: 5rem;
     width: 50%;
     padding: 0;
+    font-size: 5rem;
   }
   .footer .container-l a {
     display: block;
@@ -606,8 +633,8 @@ input {
     transform: translate(-50%, -50%);
   }
   .footer .container-r {
-    width: 50%;
     padding: 0;
+    width: 50%;
   }
   .footer .container-r .footer__card {
     padding-right: 3em;
@@ -615,9 +642,9 @@ input {
   }
   .footer .container-r .footer__card li:first-child {
     padding: 2rem 0;
+    width: 145px;
     font-size: 2.6rem;
     font-weight: 600;
-    width: 145px;
   }
   .footer .container-r .footer__card:first-child {
     padding-right: 0;
