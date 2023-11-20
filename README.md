@@ -8,7 +8,9 @@
 - 📫 How to reach me **bartoszbujdasz98@gmail.com**
 
 <h3 align="center">Website preview</h3>
-![screenshot in 1920px](https://github.com/buli98/Forest-Group/blob/main/readme-img/Forest-Group1920desktop.png?raw=true)
+<h4 align="center">Website preview in 1920px</h4>
+
+![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/Forest-Group1920desktop.png)
 
 
 <h3 align="center">Languages and Tools used in this project:</h3>
