@@ -3,8 +3,6 @@
 
 - 🔭 The project shown above is [Project Forest from mmcschool course](https://buli9812.github.io/Project-forest/)
 
-- 🌱 I’m currently learning **Html, css, javascript**
-
 - 👨‍💻 All of my projects are available at [https://github.com/buli9812](https://github.com/buli9812)
 
 - 📫 How to reach me **bartoszbujdasz98@gmail.com**
