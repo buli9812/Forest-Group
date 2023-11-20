@@ -61,6 +61,5 @@ const scrollToSection = sectionId => {
 	}
 };
 
-
 window.addEventListener('load', scrollSpy);
 window.addEventListener('scroll', scrollSpy);

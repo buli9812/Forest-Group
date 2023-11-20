@@ -80,7 +80,7 @@ input {
 }
 
 .overf-hidden {
-  overflow: hidden;
+  position: fixed;
 }
 
 .black-bars-color {
@@ -117,7 +117,7 @@ input {
   height: 100vh;
   width: 100%;
   background-color: #fff;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   transition: transform 0.5s ease-out;
   display: flex;
   justify-content: center;
@@ -125,7 +125,7 @@ input {
   z-index: 100;
 }
 .nav-mobile--active {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 .nav-mobile__item {
   position: relative;
@@ -516,8 +516,6 @@ input {
     background-image: url("../../dist/img/jungle-big.jpg");
     height: 610px;
   }
-}
-@media (min-width: 1200px) {
   h2 {
     font-size: 4.6rem;
   }

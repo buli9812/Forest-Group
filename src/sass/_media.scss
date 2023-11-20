@@ -18,29 +18,22 @@
 		}
 		&__text {
 			p {
-				// padding: 0 2rem;
 				margin-bottom: 4rem;
 			}
 		}
 		&__img {
-			// width: 100%;
 			max-width: 744px;
 		}
 	}
-
 	.banner {
 		&__text {
 			font-size: 2.6em;
 		}
 	}
-
 	.offer {
 		&__card {
 			width: 260px;
 		}
-		// &__cta-btn {
-		// 	margin: 4rem 0;
-		// }
 	}
 	.contact-section {
 		&__content {
@@ -57,7 +50,6 @@
 			}
 		}
 	}
-
 	.footer {
 		.container-l {
 			font-size: 3.6em;
@@ -77,10 +69,6 @@
 }
 
 @media (min-width: 992px) {
-	// h2 {
-	// 	padding-left: 4rem;
-	// 	padding-right: 4rem;
-	// }
 	.aboutus {
 		&__text {
 			h3 {
@@ -89,12 +77,9 @@
 			p {
 				padding: 0 6rem;
 				font-size: 2rem;
-				// margin-bottom: 6rem;
-				// line-height: 145%;
 			}
 		}
 		&__img {
-			// width: 100%;
 			max-width: 744px;
 		}
 	}
@@ -121,9 +106,6 @@
 			height: 610px;
 		}
 	}
-}
-
-@media (min-width: 1200px) {
 	h2 {
 		font-size: 4.6rem;
 	}
@@ -134,18 +116,12 @@
 			margin-bottom: 7rem;
 		}
 		&__img {
-			// width: 105%;
 			width: 550px;
 			height: 366px;
 			margin-right: 6rem;
 		}
 
-		// &__img-box {
-		// 	width: 50%;
-		// }
 		&__text {
-			// width: 50%;
-
 			h3 {
 				text-align: left;
 				display: block;
@@ -184,7 +160,6 @@
 			}
 		}
 	}
-
 	.contact-section {
 		.wrapper {
 			display: flex;
@@ -198,7 +173,6 @@
 		&__content {
 			width: 30%;
 			background-color: $pure-white;
-
 			box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
 			margin-right: 5rem;
 			&-header {
@@ -218,7 +192,6 @@
 			box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
 		}
 	}
-
 	.footer {
 		.wrapper {
 			display: flex;
@@ -230,7 +203,6 @@
 			font-size: 5rem;
 			width: 50%;
 			padding: 0;
-			// position: relative;
 			a {
 				display: block;
 				position: relative;
@@ -245,7 +217,6 @@
 			.footer__card {
 				padding-right: 3em;
 				font-size: 1.6rem;
-
 				li:first-child {
 					padding: 2rem 0;
 					font-size: 2.6rem;

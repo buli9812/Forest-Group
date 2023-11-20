@@ -1,5 +1,6 @@
 //burger
 const body = document.body;
+const html = document.documentElement;
 const nav = document.querySelector('.nav-mobile');
 const navBtn = document.querySelector('.burger-menu');
 const navItem = document.querySelectorAll('.nav-mobile__item');
@@ -23,8 +24,6 @@ const showMobileNav = () => {
 	});
 };
 
-navBtn.addEventListener('click', showMobileNav);
-
 // get current year
 
 const currentYear = () => {
@@ -47,5 +46,22 @@ const burgerBarsColor = () => {
 		}
 	});
 };
+// off top burger
 
+// function setHeight() {
+// 	// Pobierz wysokość od góry strony
+// 	let heightFromTop = window.scrollY || document.documentElement.scrollTop;
+
+// 	// Ustaw styl CSS dynamicznego elementu
+// 	let dynamicElement = document.body;
+// 	dynamicElement.style.top = heightFromTop + 'px';
+// }
+
+const setHeight = () => {
+	let heightFromTop = window.scrollY;
+	let styleRule = 'top:' + '-' + heightFromTop + 'px;';
+	body.style.cssText = styleRule;
+};
+
+navBtn.addEventListener('click', showMobileNav);
 window.addEventListener('scroll', burgerBarsColor);
