@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Bartosz Bujdasz</h1>
 <h3 align="center">A passionate frontend developer from Poland</h3>
 
-- 🔭 I’m currently working on [Project Forest from mmcschool course](https://buli9812.github.io/Project-forest/)
+- 🔭 Project you can see above is [Project Forest from mmcschool course](https://buli9812.github.io/Project-forest/)
 
 - 🌱 I’m currently learning **Html, css, javascript**
 
