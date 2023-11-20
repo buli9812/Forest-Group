@@ -3,7 +3,7 @@
 $name = $_POST["name"]; 
 $from = $_POST["email"]; 
 $subject = $_POST["subject"];
-$to = "lozio12345@lozio12345.usermd.net"; 
+$to = "lozio12345@wp.pl"; 
 $message = $_POST["msg"]; 
 
 $txt = "Imię: " . $name . "\r\n" . "Email: " . $from . "\r\n" . "\r\n" . "Treść: " . $message;
