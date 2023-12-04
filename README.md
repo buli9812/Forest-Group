@@ -13,9 +13,9 @@
 
 <h3 align="center">Website preview</h3>
 
-<h4 align="center">Website preview in 2560px on desktop</h4>
+<h4 align="center">Website preview in 1920px on desktop</h4>
 
-![screenshot in 2560px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/forest-big.png)
+![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/forest-big.png)
 
 <h4 align="center">Website preview in 430px on iPhone 14 pro max</h4>
 
