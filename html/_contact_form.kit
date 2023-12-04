@@ -1,54 +1,57 @@
 <main>
     <section class="white-section section contact-section">
-        <h2>Kontakt</h2>
-        <div class="wrapper">
-            <div class="contact-section__content">
-                <div class="contact-section__content-header">
-                    <h3>Masz jakieś dodtkowe pytania?</h3>
-                    <p>Wypełnij formularz i z chęcią na nie odpowiemy</p>
+        <div class="contact">
+            <h2>Kontakt</h2>
+            <div class="wrapper">
+                <div class="contact__content">
+                    <div class="contact__content-header">
+                        <h3>Masz jakieś dodtkowe pytania?</h3>
+                        <p>Wypełnij formularz i z chęcią na nie odpowiemy</p>
+                    </div>
+                    <form action="mail.php" method="post" class="contact__content-form">
+                        <div class="contact__content-box">
+                            <label for="name">Imię i nazwisko:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="contact__content-box">
+                            <label for="email">Adres e-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="contact__content-box">
+                            <label for="subject">Wybierz temat:</label>
+                            <input class="form-btn" list="options" id="subject" name="subject"
+                                placeholder="Wybierz lub wpisz własny">
+                            <datalist id="options">
+                                <option value="Rezerwacja">
+                                <option value="Pytanie o ofertę">
+                                <option value="Współpraca">
+                            </datalist>
+                        </div>
+                        <div class="contact__content-box">
+                            <label for="msg">Wiadomość:</label>
+                            <textarea name="msg" id="msg" required></textarea>
+                        </div>
+                        <div class="contact__content-box">
+                            <input class="form-btn" type="reset" value="Reset">
+                        </div>
+                        <div class="contact__content-box">
+                            <input class="form-btn" type="submit" value="Wyślij">
+                        </div>
+                        <p class="msg-status"></p>
+                    </form>
                 </div>
-                <form action="mail.php" method="post" class="contact-section__content-form">
-                    <div class="contact-section__content-box">
-                        <label for="name">Imię i nazwisko:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="contact-section__content-box">
-                        <label for="email">Adres e-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="contact-section__content-box">
-                        <label for="subject">Wybierz temat:</label>
-                        <input list="options" id="subject" name="subject" placeholder="Wybierz lub wpisz własny">
-                        <datalist id="options">
-                            <option value="Rezerwacja">
-                            <option value="Pytanie o ofertę">
-                            <option value="Współpraca">
-                        </datalist>
-                    </div>
-                    <div class="contact-section__content-box">
-                        <label for="msg">Wiadomość:</label>
-                        <textarea name="msg" id="msg" required></textarea>
-                    </div>
-                    <div class="contact-section__content-box">
-                        <input type="reset" value="Reset">
-                    </div>
-                    <div class="contact-section__content-box">
-                        <input type="submit" value="Wyślij">
-                    </div>
-                    <p class="msg-status"></p>
-                </form>
+                <div class="contact__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.898050088965!2d19.890269276880538!3d50.08819561338044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1688900144733!5m2!1spl!2spl"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="googlemaps__mapframe"></iframe>
+                </div>
             </div>
-            <div class="contact-section__map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.898050088965!2d19.890269276880538!3d50.08819561338044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1688900144733!5m2!1spl!2spl"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="googlemaps__mapframe"></iframe>
+            <div class="contact__info">
+                <p><i class="fa-solid fa-phone" style="color: #000000;"></i> +48-654-159-654</p>
+                <p><i class="fa-solid fa-envelope" style="color: #000000;"></i>contact@forest.com</p>
+                <p><i class="fa-solid fa-map-pin" style="color: #000000;"></i> Jasnogórska 2, 31-358 Kraków</p>
             </div>
-        </div>
-        <div class="contact-section__info">
-            <p><i class="fa-solid fa-phone" style="color: #00ffaa;"></i> +48-654-159-654</p>
-            <p><i class="fa-solid fa-envelope" style="color: #00ffaa;"></i>contact@forest.com</p>
-            <p><i class="fa-solid fa-map-pin" style="color: #00ffaa;"></i> Jasnogórska 2, 31-358 Kraków</p>
         </div>
     </section>
 </main>

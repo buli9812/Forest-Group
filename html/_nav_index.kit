@@ -1,15 +1,20 @@
 <div class="burger-menu" onclick="setHeight()">
-    <button class="burger-menu__button">
+    <button aria-label="menu" class="burger-menu__button">
         <i class="fa-solid fa-bars"></i>
     </button>
 </div>
 <nav class="nav-mobile">
-    <div class="nav-mobile__items">
-        <a class="nav-mobile__item" href="#">Home</a>
-        <a class="nav-mobile__item" href="#aboutus">O nas</a>
-        <a class="nav-mobile__item" href="#offer">Oferta</a>
-        <a class="nav-mobile__item" href="kontakt.html">Kontakt</a>
+    <div class="burger-close">
+        <button aria-label="close" class="burger-close__button">
+            <i class="fa-solid fa-x"></i>
+        </button>
     </div>
+    <ul class="nav-mobile__items">
+        <a class="nav-mobile__item" href="index.html#">Home</a>
+        <a class="nav-mobile__item" href="index.html#aboutus">O nas</a>
+        <a class="nav-mobile__item" href="index.html#offer">Oferta</a>
+        <a class="nav-mobile__item" href="kontakt.html">Kontakt</a>
+    </ul>
 </nav>
 <nav class="nav-desktop">
     <div class="wrapper">
@@ -17,9 +22,9 @@
             <a href="#"><i class="fa-solid fa-tree"></i><span>Forest</span></a>
         </div>
         <ul class="nav-desktop__list">
-            <a class="nav-desktop__list-item nav-home" href="#">Home</a>
-            <a class="nav-desktop__list-item nav-aboutus" onclick="scrollToSection('aboutus')">O nas</a>
-            <a class="nav-desktop__list-item nav-offer" href="#offer">Oferta</a>
+            <a class="nav-desktop__list-item nav-home" href="index.html#">Home</a>
+            <a class="nav-desktop__list-item nav-aboutus" href="index.html#aboutus">O nas</a>
+            <a class="nav-desktop__list-item nav-offer" href="index.html#offer">Oferta</a>
             <a class="nav-desktop__list-item nav-contact" href="kontakt.html">Kontakt</a>
         </ul>
     </div>

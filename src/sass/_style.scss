@@ -14,7 +14,6 @@ input::-webkit-calendar-picker-indicator {
 
 html,
 body {
-	height: 100%;
 	background-color: $pure-white;
 }
 
@@ -23,15 +22,20 @@ html {
 	scroll-behavior: smooth;
 	scrollbar-color: $dark;
 	overflow-x: hidden;
+	scroll-padding-top: 9rem;
 }
 p {
 	font-weight: 300;
+	font-size: 2rem;
 	line-height: 145%;
 }
+h1 {
+	font-weight: 600;
+}
 h2 {
+	padding: 5rem 0;
 	font-size: 4.6rem;
 	font-weight: 300;
-	padding: 6rem 0;
 	text-transform: uppercase;
 }
 h3 {
@@ -43,10 +47,11 @@ body,
 button {
 	font-family: 'Raleway', sans-serif;
 }
-button {
-	cursor: pointer;
-	border: 0;
+button,
+.form-btn {
 	color: $vanta-black;
+	border: 0;
+	cursor: pointer;
 }
 ul {
 	list-style: none;
@@ -54,54 +59,35 @@ ul {
 	font-size: 1.6rem;
 }
 a {
-	text-decoration: none;
 	color: $vanta-black;
+	text-decoration: none;
 }
 input {
 	color: $vanta-black;
 }
 
-//general modifiers
-.wrapper {
-	margin: 0 auto;
-	width: 100%;
-	height: 100%;
-	max-width: 1200px;
-	text-align: center;
-	padding: 0 2rem;
+//nav mobile
+.fa-x {
+	color: #000000;
 }
-//js modifiers
-.dpnone {
-	display: none;
-}
-.overf-hidden {
-	position: fixed;
-}
-.black-bars-color {
-	color: black;
-}
-.nav-activeblock {
-	background-color: $vanta-black;
-	color: $pure-white;
-}
-//nav
 
-//mobile
-
-.burger-menu {
-	position: fixed;
-	top: 0px;
-	right: 0px;
-	padding: 3em;
-	border: 1px solid transparent;
-	cursor: pointer;
-	z-index: 100;
-	&__button {
-		color: $pure-white;
-		border: none;
-		background: none;
-		i {
-			font-size: 4rem;
+.burger {
+	&-menu,
+	&-close {
+		position: fixed;
+		top: 0;
+		right: 0;
+		padding: 3rem;
+		border: 1px solid transparent;
+		cursor: pointer;
+		z-index: 100;
+		&__button {
+			color: $pure-white;
+			border: none;
+			background: none;
+			i {
+				font-size: 4rem;
+			}
 		}
 	}
 }
@@ -110,7 +96,7 @@ input {
 	position: fixed;
 	top: 0;
 	display: flex;
-	height: 100vh;
+	height: 100svh;
 	width: 100%;
 	background-color: $pure-white;
 	justify-content: center;
@@ -122,30 +108,28 @@ input {
 	&--active {
 		transform: translateX(0);
 	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+	}
 	&__item {
-		position: relative;
-		display: block;
-		padding: 1em 2em;
+		padding: 3rem 6rem;
 		color: $vanta-black;
 		font-size: 3rem;
 	}
 }
-//desktop
 
+//nav desktop
 .nav-desktop {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	display: none;
-	width: 100%;
 	height: 9rem;
 	background-color: $pure-white;
-	font-size: 1.6rem;
 	box-shadow: 0px -8px 17px 8px $vanta-black;
 	z-index: 100;
 	.wrapper {
 		position: relative;
-		display: flex;
-		flex-direction: row;
 	}
 	&__logo {
 		position: absolute;
@@ -157,37 +141,29 @@ input {
 	}
 	&__list {
 		position: absolute;
-		right: 0;
+		right: 3rem;
 		display: flex;
-
 		&-item {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			height: 100%;
 			width: 10rem;
-			padding: 0 2rem;
 			height: 9rem;
 			transition: background-color 0.4s;
 			cursor: pointer;
-			a {
-				padding: 3rem;
-			}
 			&:hover {
 				color: $pure-white;
 				background-color: $vanta-black;
+			}
+			a {
+				padding: 3rem;
 			}
 		}
 	}
 }
 
 // header
-
 .header {
-	.wrapper {
-		display: flex;
-		justify-content: center;
-	}
 	&__img {
 		position: relative;
 		min-height: 560px;
@@ -208,20 +184,16 @@ input {
 	&__text {
 		position: absolute;
 		top: 50%;
+		left: 50%;
 		color: $pure-white;
 		font-size: 1.6rem;
-		transform: translateY(-50%);
+		transform: translate(-50%, -50%);
 		z-index: 20;
-		h1 {
-			font-weight: 600;
-		}
 	}
 }
 
 //about us
-
 .aboutus {
-	background-color: $pure-white;
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -231,22 +203,17 @@ input {
 	}
 	&__text {
 		h3 {
-			display: flex;
 			margin: 5rem 0;
-			justify-content: center;
-			font-size: 2.6rem;
 			font-weight: 600;
 		}
 		p {
 			margin-bottom: 4rem;
-			font-size: 2rem;
 			text-align: justify;
 		}
 	}
 }
 
 // banner
-
 .banner {
 	&__img {
 		position: relative;
@@ -269,7 +236,7 @@ input {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		padding: 4rem;
+		padding: 2rem 4rem;
 		color: $pure-white;
 		font-size: 2rem;
 		border: 1px solid $pure-white;
@@ -279,52 +246,32 @@ input {
 }
 
 // offer
-
 .offer {
-	background-color: $pure-white;
-	.fa-check {
-		color: $green-color;
+	.wrapper {
+		display: flex;
+		flex-direction: column;
 	}
-	.fa-minus {
-		color: $grey-color;
-	}
+
 	&__text {
-		font-size: 2rem;
-	}
-	&__smalltext {
-		margin: 0.5rem 0 2rem 0;
-		font-size: 1.2rem;
-	}
-	&__cta-btn {
-		position: relative;
-		display: inline-block;
-		margin-top: 2rem;
-		padding: 2rem 4rem;
-		border-radius: 15px;
-		color: $vanta-black;
-		background-color: $cta-button-color;
-		font-size: 2.6rem;
-		font-weight: 600;
-		text-align: center;
+		font-size: 3rem;
 	}
 	&__cards {
 		margin: 2rem 0;
 	}
-
 	&__card {
-		position: relative;
 		display: inline-block;
 		margin: 2rem;
-		width: 220px;
-		height: 100%;
+		padding: 0 2.4rem;
 		border-radius: 10px;
 		box-shadow: 0px 3px 10px -3px $vanta-black;
+		.fa-check {
+			color: $green-color;
+		}
+		.fa-minus {
+			color: $li-negative;
+		}
 		h3 {
 			margin: 2rem;
-		}
-		ul {
-			display: inline-block;
-			text-align: center;
 		}
 		&-price {
 			margin-bottom: 2rem;
@@ -334,69 +281,65 @@ input {
 		&-btn {
 			padding: 1rem 5.2rem;
 			margin: 3rem 0;
-			background-color: $pure-white;
+			background-color: $light-white;
 			border-radius: 8px;
 			box-shadow: 0px 3px 10px -3px $vanta-black;
 			font-size: 1.6rem;
-		}
-		&-li-negative {
-			color: $li-negative;
+			text-transform: uppercase;
+			transition: background-color 0.4s;
+			&:hover {
+				background-color: $cta-button-color;
+			}
 		}
 	}
 }
 
 // footer
-
 .footer {
 	background-color: $light-white;
 	.container-l {
-		padding: 0.8em 0;
+		padding: 2rem 0;
 		font-size: 2.6rem;
 		i {
-			padding: 0 2rem 0 0;
+			padding-right: 2rem;
 		}
 	}
 	.container-r {
 		display: flex;
 		justify-content: space-evenly;
-		padding-bottom: 0.8em;
+		padding-bottom: 1rem;
 		text-align: left;
 		.footer__card {
 			li {
 				padding: 1rem 0;
 				font-size: 1.2rem;
-			}
-			li:first-child {
-				top: 0;
-				font-size: 1.5rem;
-				font-weight: 600;
+				&:first-child {
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
 			}
 		}
 	}
 }
 
+//data footer
 .data {
 	display: block;
 	text-align: center;
-	padding: 1.4rem;
+	padding: 1.4rem 0;
 	background-color: $light-white;
 	border-top: 1px solid $li-negative;
 	font-size: 1.6rem;
 }
 
-.contact-section {
+//contakt
+.contact {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 50px 0;
 	background-color: $pure-white;
-	h2 {
-		padding-top: 0;
-		padding-bottom: 5rem;
-		text-align: center;
-	}
 	&__info {
-		margin-top: 4rem;
+		margin: 3rem 0;
 		i {
 			padding-right: 2rem;
 		}
@@ -405,24 +348,20 @@ input {
 			font-size: 1.5rem;
 		}
 	}
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-	}
 	&__map {
-		width: 100%;
-		height: 300px;
+		height: 320px;
+		box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
 		border-radius: 15px;
 		.googlemaps__mapframe {
 			border-radius: 15px;
 		}
 	}
 	&__content {
+		margin-bottom: 5rem;
+		padding: 3rem;
 		border-radius: 15px;
-		.btn-form {
-			margin: 2rem 0;
-		}
-		button,
+		background-color: $pure-white;
+		box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
 		input,
 		textarea,
 		select {
@@ -430,37 +369,170 @@ input {
 			background-color: $light-white;
 			border: 1px solid #c5c5c5;
 			border-radius: 5px;
-			font-size: 2rem;
+			font-size: 1.4rem;
 		}
 		&-header {
-			h2 {
-				font-size: 3.6rem;
-				font-weight: 500;
-			}
 			p {
-				font-size: 2rem;
+				padding-top: 1rem;
 			}
 		}
 		&-box {
 			display: flex;
 			flex-direction: column;
 			margin: 3rem auto;
-			width: 90%;
 			label {
 				margin-bottom: 1rem;
-				font-size: 2rem;
+				font-size: 1.4rem;
 			}
-
 			textarea {
 				min-height: 150px;
 				resize: vertical;
 			}
 		}
-		&-form {
-			padding-bottom: 2rem;
-		}
 	}
 }
+
+//more offers
+.more-offer {
+	&__container {
+		p {
+			text-align: justify;
+			margin-bottom: 4rem;
+		}
+		h3 {
+			margin: 3rem 0;
+			font-weight: 600;
+		}
+	}
+	&__img-box {
+		height: 250px;
+		background-position: center;
+		background-size: cover;
+		&.img-first {
+			background-image: url(../../dist/img/bike-small.jpg);
+		}
+		&.img-second {
+			background-image: url(../../dist/img/house-small.jpg);
+		}
+		&.img-third {
+			background-image: url(../../dist/img/boat-small.jpg);
+		}
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		margin-top: 3rem;
+		&-text {
+			font-weight: 400;
+			font-size: 1.6rem;
+			// line-height: 145%;
+			text-align: center;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	// &__containers{
+	// }
+	// &__container {
+	// 	&-picture {
+	// 		&-first {
+	// 			width: 100%;
+	// 		}
+	// 		&-second {
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// 	&-text {
+	// 		&-fist {
+	// 			width: 100%;
+	// 		}
+	// 		&-second {
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
+}
+
+//js modifiers
+.dpblock {
+	display: block;
+}
+.dpnone {
+	display: none;
+}
+
+.overf-hidden {
+	position: fixed;
+}
+.black-bars-color {
+	color: black;
+}
+.nav-activeblock {
+	color: $pure-white;
+	background-color: $vanta-black;
+}
+
+//general modifiers
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	text-align: center;
+	padding: 0 2rem;
+}
+.cta-btn {
+	position: absolute;
+	// display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto;
+	padding: 2rem 4rem;
+	color: $vanta-black;
+	background-color: $cta-button-color;
+	border-radius: 15px;
+	box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
+	font-size: 2rem;
+	font-weight: 600;
+	transition: background-color 0.4s;
+	&:hover {
+		background-color: $cta-button-color-hover;
+	}
+	&-smalltext {
+		text-align: center;
+		margin-bottom: 4rem;
+		font-size: 1rem;
+	}
+}
+
+.btn-animation {
+	overflow: hidden;
+	position: relative;
+	&::after,
+	&::before {
+		display: block;
+		position: absolute;
+		content: '';
+		transition: 0.4s;
+		z-index: 1123;
+		overflow: hidden;
+	}
+	&::before {
+		background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+		top: -10px;
+		height: 130%;
+		width: 10px;
+		left: -40px;
+		content: '';
+		transform: rotate(20deg);
+	}
+	&:hover::before {
+		left: 120%;
+	}
+}
+
+// form modifiers
 
 .msg-status {
 	display: none;
@@ -472,14 +544,11 @@ input {
 	font-size: 2rem;
 }
 
-.success,
-.error {
-	position: relative;
-	display: flex;
-}
 .success {
 	background-color: $cta-button-color;
+	display: block;
 }
 .error {
 	background-color: $error-color;
+	display: block;
 }
