@@ -166,7 +166,7 @@ input {
 .header {
 	&__img {
 		position: relative;
-		min-height: 560px;
+		min-height: 56rem;
 		background-image: url('../../dist/img/jungle-small.jpg');
 		background-position: 20% 50%;
 		background-size: cover;
@@ -349,7 +349,7 @@ input {
 		}
 	}
 	&__map {
-		height: 320px;
+		height: 32rem;
 		box-shadow: 5px 5px 8px 5px rgba(46, 46, 46, 0.18);
 		border-radius: 15px;
 		.googlemaps__mapframe {
@@ -385,7 +385,7 @@ input {
 				font-size: 1.4rem;
 			}
 			textarea {
-				min-height: 150px;
+				min-height: 15rem;
 				resize: vertical;
 			}
 		}
@@ -405,7 +405,7 @@ input {
 		}
 	}
 	&__img-box {
-		height: 250px;
+		height: 25rem;
 		background-position: center;
 		background-size: cover;
 		&.img-first {
@@ -478,7 +478,7 @@ input {
 //general modifiers
 .wrapper {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 120rem;
 	text-align: center;
 	padding: 0 2rem;
 }
@@ -522,7 +522,7 @@ input {
 		background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 		top: -10px;
 		height: 130%;
-		width: 10px;
+		width: 1rem;
 		left: -40px;
 		content: '';
 		transform: rotate(20deg);
