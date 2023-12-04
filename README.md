@@ -20,17 +20,3 @@
 <h4 align="center">Website preview in 1200px on desktop</h4>
 
 ![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/Forest-Group1200desktop.png)
-
-<h4 align="center">Website preview in 992px on mobile</h4>
-
-![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/Forest-Group992mobile.png)
-
-<h4 align="center">Website preview in 576px on mobile</h4>
-
-![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/Forest-Group576mobile.png) 
-
-<h4 align="center">Website preview in 320px on mobile</h4>
-
-![screenshot in 1920px](https://github.com/buli9812/Forest-Group/raw/main/readme-img/Forest-Group320mobile.png) 
-
-
